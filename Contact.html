@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+
+<div style="background-image: url('pexels-photo-1251862.jpeg');">
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #FF7733;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FFA833;
+  color: #335BFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: (#335BFF);
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php" id="contactForm">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." id="name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." id="surname">
+
+    <label for="country">Country</label>
+    <select id="country" name="country" id="country">
+
+      <option value="canada">America</option>
+      <option value="usa">Alaska</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">South Africa</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="Message" placeholder="Write something.." style="height:200px" id="message"></textarea>
+
+    <div class="g-recaptcha" data-sitekey="6LfzzNgUAAAAAMcw_AqHIBPHAKScuuAq08wY1zQa"></div>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebasea-app.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
